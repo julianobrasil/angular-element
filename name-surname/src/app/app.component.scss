@@ -1,0 +1,17 @@
+.container {
+    %layout {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    @extend %layout;
+
+    label~label {
+        margin-top: 20px;
+    }
+
+    >label {
+        @extend %layout
+    }
+}

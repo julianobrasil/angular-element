@@ -1,0 +1,13 @@
+<form novalidate [formGroup]="_form" (ngSubmit)="onSub($event, _form.value)">
+  <div class="container">
+    <label>
+      Enter your first name:
+      <input formControlName="firstName">
+    </label>
+    <label>
+      Enter your last name:
+      <input formControlName="lastName">
+    </label>
+  </div>
+  <button>Submit</button>
+</form>
